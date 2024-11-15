@@ -1,0 +1,84 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.drop-down {
+    background-color: #ccddfd;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-family: "Montserrat";
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid #1f8cff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    user-select: none;
+}
+
+.head {
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 110%;
+    background-color: white;
+    width: 270px;
+    border: 2px solid #1f8cff;
+    border-radius: 5px;
+    right: 0;
+    display: none;
+}
+
+ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.items {
+    list-style-type: none;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: 600;
+    user-select: none;
+}
+
+.items:hover {
+    background-color: #ebf1ff;
+    color: #0210fb;
+}
+
+.svg {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.visible {
+    display: block;
+}
