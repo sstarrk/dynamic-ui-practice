@@ -1,4 +1,5 @@
 import "./style.css";
+import "./slider.js";
 
 const headBtn = document.querySelector(".head");
 const menu = document.querySelector(".menu");
@@ -33,3 +34,5 @@ function showMenu(menu) {
         return true;
     }
 }
+
+showMenu(menu);
