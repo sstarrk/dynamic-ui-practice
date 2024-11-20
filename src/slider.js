@@ -47,3 +47,13 @@ function fillDot(index) {
     });
     dots[index].style.color = "#c0c0c0";
 }
+
+dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+        images.forEach((image) => {
+            image.classList.remove("visible");
+        });
+        images[index].classList.add("visible");
+        fillDot(index);
+    });
+});
