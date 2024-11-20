@@ -18,3 +18,19 @@ rightBtn.addEventListener("click", () => {
         }
     }
 });
+
+leftBtn.addEventListener("click", () => {
+    for (let i = 0; i < images.length; i++) {
+        if (images[i].classList.contains("visible")) {
+            if (i == 0) {
+                images[i].classList.remove("visible");
+                images[images.length - 1].classList.add("visible");
+                break;
+            } else {
+                images[i].classList.remove("visible");
+                images[i - 1].classList.add("visible");
+                break;
+            }
+        }
+    }
+});
