@@ -153,3 +153,7 @@ ul {
     width: 100%;
     justify-content: center;
 }
+
+.filled {
+    color: #c0c0c0;
+}
