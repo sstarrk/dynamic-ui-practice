@@ -114,7 +114,7 @@ ul {
     object-fit: cover;
 }
 
-.images img:not(:first-child) {
+.images img:not(.visible) {
     display: none;
 }
 
@@ -124,6 +124,7 @@ ul {
     font-size: 2rem;
     color: grey;
     position: absolute;
+    user-select: none;
 }
 
 .left,
